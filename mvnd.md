@@ -17,7 +17,7 @@ Then make the file executable: `chmod +x mvnd`
 ## Explanation
 
 ### `docker run -it`
-Runs the docket container in interactive mode.
+Runs the docker container in interactive mode (tty and input attached).
 ### `--rm`
 Removes the container once done.
 ### `-u 1000:1000`
