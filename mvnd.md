@@ -27,9 +27,10 @@ Mounts local `~/.m2` directory within docker container at `/maven/.m2`. This is 
 ### `-v $(pwd):/app`
 Mounts local working directorty within docker container at `/app`. This is needed so that local files are available to maven that is running within a container.
 ### `-p 8080:8080`
-Maps port 8080 to accept network connections. This is needed when doing something like spring-boot:run or tomcat:run.
-If no servers are started, this can be omitted. If server is started on a different port, adjust it accordingly.
-If server is started multiple ports then repeat the option multiple times.
+Maps port 8080 to accept network connections. This is needed when doing something like `spring-boot:run` or `tomcat:run`.
+If no service is started, this can be omitted.
+If service is running on a different port, adjust it accordingly.
+If multiple services (e.g. Tomcat and LiveReload in a spring-boot MVC app) are started, then repeat the option multiple times for each port.
 ### `-e MAVEN_CONFIG=/maven/.m2`
 This is required when `-u 1000:1000` option is used. Otherwise skip it.
 ### `maven:3-openjdk-8`
