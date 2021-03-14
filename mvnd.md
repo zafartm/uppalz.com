@@ -25,7 +25,7 @@ User id and group id to be used. If skipped, it uses `root:root` by default.
 ### `-v ~/.m2:/maven/.m2`
 Mounts local `~/.m2` directory within docker container at `/maven/.m2`. This is needed to avoid re-downloading of maven artifacts on each run.
 ### `-v $(pwd):/app`
-Mounts local working directorty within docker container at `/app`. This is needed so that local files are available to maven running within container
+Mounts local working directorty within docker container at `/app`. This is needed so that local files are available to maven that is running within a container.
 ### `-p 8080:8080`
 Maps port 8080 to accept network connections. This is needed when doing something like spring-boot:run or tomcat:run.
 If no servers are started, this can be omitted. If server is started on a different port, adjust it accordingly.
