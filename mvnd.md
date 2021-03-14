@@ -34,9 +34,9 @@ If multiple services (e.g. Tomcat and LiveReload in a spring-boot MVC app) are s
 ### `-e MAVEN_CONFIG=/maven/.m2`
 This is required when `-u 1000:1000` option is used. Otherwise skip it.
 ### `maven:3-openjdk-8`
-Docker container image name and version. `maven` is the image name, `3-openjdk-8`is the version. See [maven page at docker hub](https://hub.docker.com/_/maven) for all available versions.
+Docker container image that is being run. `maven` is the image name, `3-openjdk-8`is the version. See [maven page at docker hub](https://hub.docker.com/_/maven) for all available versions.
 ### `mvn`
-This is actual command to start maven. Remaining options are argumnets for this command.
+This is the actual command to start maven. Remaining options are argumnets for this command.
 ### `-Duser.home=/maven`
 This is required when `-u 1000:1000` option is used. Skip otherwise.
 ### `$@`
