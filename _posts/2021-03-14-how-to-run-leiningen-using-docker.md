@@ -1,4 +1,4 @@
-# Run leiningen using docker
+# How to run leiningen using docker
 
 ## leind
 Save the following command in a file named `leind` in project's root directory.

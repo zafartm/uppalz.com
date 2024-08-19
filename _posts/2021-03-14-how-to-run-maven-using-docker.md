@@ -1,4 +1,4 @@
-# Run maven using docker
+# How to run maven using docker
 
 ## mvnd
 Save the following command in a file named `mvnd` in project's root directory.
