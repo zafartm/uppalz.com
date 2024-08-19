@@ -1,4 +1,9 @@
-## How to deploy a multi container application to a docker server
+---
+layout: post
+title:  "How to deploy a multi container application to a docker server"
+---
+
+# How to deploy a multi container application to a docker server
 
 Instructions below apply to a specific use case where we need to deploy all the application services to a single fat server that is running only docker.
 

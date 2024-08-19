@@ -1,3 +1,8 @@
+---
+layout: post
+title:  "How to run leiningen using docker"
+---
+
 # How to run leiningen using docker
 
 ## leind
