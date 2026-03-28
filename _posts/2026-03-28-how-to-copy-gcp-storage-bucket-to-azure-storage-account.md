@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Copy GCP Storage Bucket to Azure Storage Account"
+title:  "Copy GCP storage bucket to Azure storage account"
 ---
 
-# How to copy GCP storage bucket to azure storage account
+# How to copy GCP storage bucket to Azure storage account
 
 ## 1. Install requisite tools
 1. az cli (https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt)
