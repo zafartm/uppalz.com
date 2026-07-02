@@ -1,0 +1,16 @@
+name: Scheduled Healthcheck Example
+on:
+  schedule:
+    - cron: "37 * * * *"  # Standard cron expression
+  workflow_dispatch: # Allows manual trigger
+permissions:
+  actions: read   # Needed for 'gh run list
+jobs:
+  check-website:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Execute Healthcheck
+        uses: zafartm/healthcheck-gh-action@v1
+        with:
+          website-url: "https://uppalz.com/"
+          slack-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
